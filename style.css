@@ -1,0 +1,11 @@
+/*Main settings*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    background: #111318;
+    color: #f1f3f5;
+    font-family: Arial, sans-serif;
+}
