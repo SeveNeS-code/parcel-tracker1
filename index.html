@@ -18,12 +18,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr onclick="toggleDetails('details-511')">
                     <td>511</td>
                     <td>Scale</td>
                     <td><span class="status available">In stock</span></td>
                 </tr>
-                <tr class="details-row">
+                <tr id= "details-511" class="details-row">
                     <td colspan="3">
                         Data received 10.10.2026
                     </td>
@@ -42,4 +42,14 @@
         </table>
     </div>
 </body>
+<script>
+    function toggleDetails(id) {
+        const row = document.getElementById(id);
+        if (row.style.display === "table-row") {
+            row.style.display = "none";
+        } else {
+            row.style.display = "table-row";
+        }
+    }
+</script>
 </html>
