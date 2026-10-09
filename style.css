@@ -9,3 +9,52 @@ body {
     color: #f1f3f5;
     font-family: Arial, sans-serif;
 }
+h1 {
+    margin-bottom: 24px;
+    font-size: 26px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #30343d;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #30343d;
+}
+
+th {
+    color: #9ca3af;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+td {
+    font-size: 14px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.available {
+    background: #183c2b;
+    color: #75e0a0;
+}
+
+.sent {
+    background: #1c3154;
+    color: #91baff;
+}
