@@ -58,3 +58,6 @@ td {
     background: #1c3154;
     color: #91baff;
 }
+.details-row {
+    display: none;
+}
