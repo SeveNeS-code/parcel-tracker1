@@ -18,7 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr onclick="toggleDetails('details-511')">
+                <tr>
                     <td><button class="expand-button" onclick="toggleDetails('details-511', this)">⌄</button> 511</td>
                     <td>Scale</td>
                     <td><span class="status available">In stock</span></td>
@@ -43,15 +43,20 @@
     </div>
 </body>
 <script>
-    function toggleDetails(id_botton) {
-        const row = document.getElementyById(id);
-        if (row.style.display === "table-row") {
-            row.style.display ="none";
-            button.textContent ="⌄";
-        } else {
-            row.style.display = "table-row";
-            button.textContent = "⌃";
-        }
-    }
+    function toggleDetails(id, button) {
+  const row = document.getElementById(id);
+
+  if (!row) return;
+
+  const isHidden = getComputedStyle(row).display === "none";
+
+  if (isHidden) {
+    row.style.display = "table-row";
+    button.textContent = "⌃";
+  } else {
+    row.style.display = "none";
+    button.textContent = "⌄";
+  }
+}
 </script>
 </html>
